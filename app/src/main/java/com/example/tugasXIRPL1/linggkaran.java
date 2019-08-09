@@ -1,4 +1,4 @@
-package com.example.sembarabf;
+package com.example.tugasXIRPL1;
 
 import android.graphics.PorterDuff;
 import android.os.Bundle;
@@ -14,21 +14,22 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class segitiga extends AppCompatActivity {
+
+public class linggkaran extends AppCompatActivity {
 
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
-    EditText alas,tinggi;
+    EditText alas;
     Button hasil;
     TextView tvResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_segitiga);
+        setContentView(R.layout.activity_linggkaran);
 
-        this.setTitle("Segitiga");
+        this.setTitle("Lingkaran");
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -44,30 +45,20 @@ public class segitiga extends AppCompatActivity {
 //        setupTabIcons();
 
         alas = findViewById(R.id.txtalas);
-        tinggi = findViewById(R.id.txttinggi);
         hasil = findViewById(R.id.btn_hitung);
         tvResult = findViewById(R.id.tvresult);
         alas.addTextChangedListener(loginTextWatcher);
-        tinggi.addTextChangedListener(loginTextWatcher);
 
         hasil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String inputAngka1 = alas.getText().toString().trim();
-                String inputAngka2 = tinggi.getText().toString().trim();
 
-                if (inputAngka1.equalsIgnoreCase("") && inputAngka2.equalsIgnoreCase("")) {
+                if (inputAngka1.equalsIgnoreCase("")) {
                     alas.setError("Masukan angka");
-                    tinggi.setError("Masukan angka");}
-                else if(inputAngka1.equalsIgnoreCase("")){
-                    alas.setError("Masukan angka");
-                }
-                else if(inputAngka2.equalsIgnoreCase("")){
-                    tinggi.setError("Masukan angka");
-                }else{
+                } else{
                     double angka1 = Double.parseDouble(inputAngka1);
-                    double angka2 = Double.parseDouble(inputAngka2);
-                    double hasil = angka1 * angka2 / 2;
+                    double hasil =( 22 * angka1*angka1)/7;
 
                     tvResult.setText(String.valueOf(hasil));
                 }
@@ -89,10 +80,9 @@ public class segitiga extends AppCompatActivity {
         @Override
         public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
             String username = alas.getText().toString().trim();
-            String username1 = tinggi.getText().toString().trim();
 
 
-            if(!username.isEmpty()&&!username1.isEmpty()) {
+            if(!username.isEmpty()) {
                 hasil.getBackground().setColorFilter(hasil.getContext().getResources().getColor(R.color.colorPrimary), PorterDuff.Mode.MULTIPLY);
             }
             else{
@@ -107,4 +97,3 @@ public class segitiga extends AppCompatActivity {
         }
     };
 }
-

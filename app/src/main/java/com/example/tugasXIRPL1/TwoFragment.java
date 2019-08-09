@@ -1,4 +1,4 @@
-package com.example.sembarabf;
+package com.example.tugasXIRPL1;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,9 +7,6 @@ import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-
-
 
 
 public class TwoFragment extends Fragment {

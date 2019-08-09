@@ -1,4 +1,4 @@
-package com.example.sembarabf;
+package com.example.tugasXIRPL1;
 
 import android.graphics.PorterDuff;
 import android.os.Bundle;

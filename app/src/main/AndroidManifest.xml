@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.sembarabf">
+    package="com.example.tugasXIRPL1">
 
     <application
         android:allowBackup="true"
@@ -9,19 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyMaterialTheme">
-        <activity android:name=".pilih"></activity>
-        <activity android:name=".splashscreen">
+        <activity android:name="com.example.tugasXIRPL1.kalkulatorbiasa"></activity>
+        <activity android:name="com.example.tugasXIRPL1.pilih" />
+        <activity android:name="com.example.tugasXIRPL1.splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".linggkaran" />
-        <activity android:name=".segitiga" />
-        <activity android:name=".PersegiPanjangActivity" />
-        <activity android:name=".PersegiActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name="com.example.tugasXIRPL1.linggkaran" />
+        <activity android:name="com.example.tugasXIRPL1.segitiga" />
+        <activity android:name="com.example.tugasXIRPL1.PersegiPanjangActivity" />
+        <activity android:name="com.example.tugasXIRPL1.PersegiActivity" />
+        <activity android:name="com.example.tugasXIRPL1.MainActivity" />
     </application>
 
 </manifest>
