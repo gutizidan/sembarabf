@@ -9,17 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyMaterialTheme">
-        <activity android:name=".linggkaran"></activity>
-        <activity android:name=".segitiga" />
-        <activity android:name=".PersegiPanjangActivity" />
-        <activity android:name=".PersegiActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".pilih"></activity>
+        <activity android:name=".splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".linggkaran" />
+        <activity android:name=".segitiga" />
+        <activity android:name=".PersegiPanjangActivity" />
+        <activity android:name=".PersegiActivity" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
