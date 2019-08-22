@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyMaterialTheme">
-        <activity android:name=".Balok"></activity>
+        <activity android:name=".bola"></activity>
+        <activity android:name=".prisma" />
+        <activity android:name=".Balok" />
         <activity android:name=".Kubus" />
         <activity android:name=".kalkulatorbiasa" />
         <activity android:name=".pilih" />

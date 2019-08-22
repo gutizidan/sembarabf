@@ -54,10 +54,10 @@ public class Adapte extends RecyclerView.Adapter<Adapte.ViewHolder> {
                             intent = new Intent(context, Balok.class);
                             break;
                         case 2 :
-                            intent = new Intent(context, PersegiActivity.class);
+                            intent = new Intent(context, prisma.class);
                             break;
                         case 3 :
-                            intent = new Intent(context, PersegiActivity.class);
+                            intent = new Intent(context, bola.class);
                             break;
                     }
                     context.startActivity(intent);

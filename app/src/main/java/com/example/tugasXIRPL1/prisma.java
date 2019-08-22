@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Balok extends AppCompatActivity {
+public class prisma extends AppCompatActivity {
 
     private Toolbar toolbar;
     private TabLayout tabLayout;
@@ -27,7 +27,7 @@ public class Balok extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_balok);
+        setContentView(R.layout.activity_prisma);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -35,7 +35,7 @@ public class Balok extends AppCompatActivity {
 
 
 
-        this.setTitle("Balok");
+        this.setTitle("Prisma");
 
 
         panjang = findViewById(R.id.txtpanjang);
@@ -70,7 +70,6 @@ public class Balok extends AppCompatActivity {
                     lebar.setError("Masukan angka");
                     tinggi.setError("Masukan angka");
                 }
-
                 else if(inputPanjang.equalsIgnoreCase("")){
                     panjang.setError("Masukan angka");
                 }
@@ -80,10 +79,10 @@ public class Balok extends AppCompatActivity {
                 }
                 else if(inputTinggi.equalsIgnoreCase("")){
                     tinggi.setError("Masukan angka");}else {
-                    Integer panjang = Integer.parseInt(inputPanjang);
-                    Integer lebar = Integer.parseInt(inputLebar);
-                    Integer tinggi = Integer.parseInt(inputTinggi);
-                    Integer hasil = panjang*lebar*tinggi;
+                    Double panjang = Double.parseDouble(inputPanjang);
+                    Double lebar = Double.parseDouble(inputLebar);
+                    Double tinggi = Double.parseDouble(inputTinggi);
+                    Double hasil = (panjang*lebar*tinggi)*(0.5);
 
                     tvResult.setText(String.valueOf(hasil));
                 }
@@ -124,3 +123,4 @@ public class Balok extends AppCompatActivity {
         }
     };
 }
+

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    tools:context=".Balok">
+    tools:context=".bola">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -40,33 +40,15 @@
         <!--android:textStyle="bold" />-->
 
         <EditText
-            android:id="@+id/txtpanjang"
+            android:id="@+id/txtalas"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:background="@drawable/text_round"
             android:padding="10dp"
-            android:hint="Panjang"
+            android:hint="Jari jari"
             android:inputType="number" />
 
-        <EditText
-            android:id="@+id/txtlebar"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:background="@drawable/text_round"
-            android:padding="10dp"
-            android:hint="Lebar"
-            android:inputType="number" />
-        <EditText
-            android:id="@+id/txttinggi"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:background="@drawable/text_round"
-            android:padding="10dp"
-            android:hint="Tinggi"
-            android:inputType="number" />
 
         <TextView
             android:id="@+id/tvresult"
@@ -84,9 +66,8 @@
             android:layout_height="60dp"
             android:layout_gravity="center"
             android:background="@drawable/bundar1"
-            android:text="volume"
-            android:textColor="#ffff"/>
-
+            android:textColor="#ffff"
+            android:text="volume" />
 
     </LinearLayout>
 
