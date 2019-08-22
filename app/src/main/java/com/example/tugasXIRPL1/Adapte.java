@@ -11,8 +11,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
+
 
 import java.util.ArrayList;
 
@@ -41,7 +40,6 @@ public class Adapte extends RecyclerView.Adapter<Adapte.ViewHolder> {
 
             //Menginisialisasi View-View untuk kita gunakan pada RecyclerView
             JudulMeme = itemView.findViewById(R.id.memetitle);
-            SubMeme = itemView.findViewById(R.id.sub_meme);
             Meme = itemView.findViewById(R.id.meme);
             ItemList = itemView.findViewById(R.id.item_list);
             ItemList.setOnClickListener(new View.OnClickListener() {
@@ -50,9 +48,15 @@ public class Adapte extends RecyclerView.Adapter<Adapte.ViewHolder> {
                     Intent intent = new Intent();
                     switch (getAdapterPosition()){
                         case 0 :
-                            intent = new Intent(context, PersegiPanjangActivity.class);
+                            intent = new Intent(context, Kubus.class);
                             break;
                         case 1 :
+                            intent = new Intent(context, Balok.class);
+                            break;
+                        case 2 :
+                            intent = new Intent(context, PersegiActivity.class);
+                            break;
+                        case 3 :
                             intent = new Intent(context, PersegiActivity.class);
                             break;
                     }
@@ -75,7 +79,6 @@ public class Adapte extends RecyclerView.Adapter<Adapte.ViewHolder> {
         //Memasukan Nilai/Value Pada View-View Yang Telah Dibuat
         final String Nama = arrayList.get(position);//Mengambil data sesuai dengan posisi yang telah ditentukan
         holder.JudulMeme.setText(Nama);
-        holder.SubMeme.setText("Gambar Meme Ke: "+position);
         holder.Meme.setImageResource(memeList.get(position)); // Mengambil gambar sesuai posisi yang telah ditentukan
     }
 

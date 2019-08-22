@@ -21,9 +21,9 @@ public class ThreeFragment extends Fragment {
     private ArrayList<String> JudulMeme;
     private ArrayList<Integer> GambarMeme;
     //Daftar Judul
-    private String[] Judul = {"KUBUS", "BALOK"};
+    private String[] Judul = {"KUBUS", "BALOK","PRIMAS", "BOLA"};
     //Daftar Gambar
-    private int[] Gambar = {R.drawable.ic_kubus, R.drawable.ic_balok};
+    private int[] Gambar = {R.drawable.ic_3d, R.drawable.ic_beam,R.drawable.ic_kubus, R.drawable.ic_balok};
 
 //    private void showSelectedHero(bangun hero) {
 //        Toast.makeText(getContext(), "Kamu memilih " + hero.getNama(), Toast.LENGTH_SHORT).show();
